@@ -191,32 +191,32 @@ export default function App() {
     <div className='outer'>
       <div className = "controls">
         <div className="flexItems">
-          <button className = {action === ACTIONS.SELECT ? "tool-btn active" : "tool-btn" }
+          <button className = {action === ACTIONS.SELECT ? "tools active" : "tools" }
           onClick = {() => setAction(ACTIONS.SELECT)} >
             <GiArrowCursor size = {"2rem"} />
           </button>
 
-          <button className = {action === ACTIONS.RECTANGLE ? "tool-btn active" : "tool-btn"}
+          <button className = {action === ACTIONS.RECTANGLE ? "tools active" : "tools"}
           onClick = {() => setAction(ACTIONS.RECTANGLE)}>
             <TbRectangle size = {"2rem"} />
           </button>
 
-          <button className = {action === ACTIONS.CIRCLE ? "tool-btn active" : "tool-btn"}
+          <button className = {action === ACTIONS.CIRCLE ? "tools active" : "tools"}
           onClick = {() => setAction(ACTIONS.CIRCLE)}>
             <FaRegCircle size = {"1.5rem"} />
           </button>
 
-          <button className = {action === ACTIONS.ARROW ? "tool-btn active" : "tool-btn"}
+          <button className = {action === ACTIONS.ARROW ? "tools active" : "tools"}
           onClick = {() => setAction(ACTIONS.ARROW)}>
             <FaLongArrowAltRight size = {"2rem"} />
           </button>
 
-          <button className = {action === ACTIONS.SCRIBBLE ? "tool-btn active" : "tool-btn"}
+          <button className = {action === ACTIONS.SCRIBBLE ? "tools active" : "tools"}
           onClick = {() => setAction(ACTIONS.SCRIBBLE)}>
             <LuPencil size = {"1.5rem"} />
           </button>
 
-          <button className="color-picker-btn">
+          <button className="color-picker-change">
               <input
                 className="color-picker"
                 type="color"
@@ -225,11 +225,11 @@ export default function App() {
               />
           </button>
 
-          <button className="tool-btn" onClick={handleExport}>
+          <button className="tools" onClick={handleExport}>
               <IoMdDownload size={"1.5rem"} />
             </button>
           
-          <button className="tool-btn" onClick={handleSend}>
+          <button className="tools" onClick={handleSend}>
             <FaArrowUpLong size = {"1.5rem"} />
           </button>
 
